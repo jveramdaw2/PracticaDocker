@@ -32,8 +32,6 @@ li {
     padding: 0;
 }
 
- 
-
 table {
     border: 1px solid black;
     border-collapse: collapse;
@@ -90,7 +88,6 @@ br {
     width: 30%;
     float: left;
     min-height: 300px;
-   
     
 }
 #derecha {
@@ -101,8 +98,8 @@ br {
 
 
 #menu a {
-   color: white;
-   text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 #menu a:hover {
@@ -110,7 +107,6 @@ br {
 }
 #menu ul {     
     list-style-type: none;
-   
 }
 #menu ul li#inicio {
     border-bottom: 1px solid midnightblue; 
@@ -122,10 +118,9 @@ br {
 }
 
 #derecha img {
-     
     padding: 10px;
 }
- 
+
 #pie {
     clear: both;
     margin-top: 2em;
@@ -137,14 +132,12 @@ br {
     font-size: 80%;
     margin: 1em 0;
 }
- 
 
 /********************************************************************
 * Estilos para el formulario
 ********************************************************************/
 #form {
     margin: .5em 0 2em;
-     
 }
 #form label {
     width: 12em;
@@ -172,9 +165,8 @@ br {
 }
 
 #form p {
-     margin-left: 10em;
-     margin-bottom: 3px;
-     
+    margin-left: 10em;
+    margin-bottom: 3px;
 }
 
 #form input[type='submit'] {

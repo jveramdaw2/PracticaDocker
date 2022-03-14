@@ -1,5 +1,5 @@
 <?php
-     abstract class empleado{
+    abstract class empleado{
         private $_nombre;
         private $_apellido;
         private $_numSegSo;
@@ -65,7 +65,7 @@
         }
         function mostrar(){
             return parent::mostrar() . "<br>Sueldo: $this->_sueldo <br> Dietas: $this->_dietas<br>Ingresos son: " .$this->ingresos() ."<br>";
-         }
+        }
     }
 
     class EmpleadoPorComision extends empleado{
@@ -118,7 +118,7 @@
         
         function addEmpleado(empleado $emp){
             if($emp instanceof empleadoPlantilla){
-                 $this->empleados[] = new empleadoPlantilla($emp->getNombre(),$emp->getApellido(),$emp->getNumSeguridadSocial(),$emp->getSueldo(),$emp->getDietas());
+                $this->empleados[] = new empleadoPlantilla($emp->getNombre(),$emp->getApellido(),$emp->getNumSeguridadSocial(),$emp->getSueldo(),$emp->getDietas());
             }
             if($emp instanceof EmpleadoPorComision){
                 $this->empleados[] = new EmpleadoPorComision($emp->getNombre(),$emp->getApellido(),$emp->getNumSeguridadSocial(),$emp->getHoras(),$emp->getTarifa(),$emp->getBase());
@@ -128,7 +128,7 @@
         function listarEmpleados(){
             $lista = "";
             foreach($this->empleados as $emp){
-               $lista .= $emp->mostrar() . "<br>";
+                $lista .= $emp->mostrar() . "<br>";
             }
             return $lista;
         }
